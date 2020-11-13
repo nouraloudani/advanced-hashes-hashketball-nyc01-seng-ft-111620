@@ -155,7 +155,6 @@ def team_colors(team)
   hash = game_hash
   team_colors = []
 hash.map { |location, info| }
-binding.pry
 end
 
 
