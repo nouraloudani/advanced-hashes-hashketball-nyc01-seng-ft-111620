@@ -161,3 +161,10 @@ def team_colors(team)
 end
 
 def team_names
+  hash = game_hash
+  team_names = []
+  hash.map { |location, info|
+    team_names << info[:team_name]
+  }
+  return team_names
+end
