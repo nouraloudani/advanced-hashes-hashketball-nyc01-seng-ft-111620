@@ -158,5 +158,6 @@ def team_colors(team)
     return location[:colors]
     end
   }
+  
 end
 
