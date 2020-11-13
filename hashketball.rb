@@ -168,3 +168,16 @@ def team_names
   }
   return team_names
 end
+
+def player_numbers(team)
+  hash = game_hash
+  jerseys = []
+  hash.map { |location, info|
+    if info[:team_name] == team 
+      info[:players].map { |player_info|
+      jerseys << player_info[:number]
+    end
+      }
+  }
+end
+      
