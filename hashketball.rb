@@ -153,11 +153,9 @@ end
 
 def team_colors(team)
   hash = game_hash
-  hash.map { |location| 
-    if location[:team_name] == team 
-    return location[:colors]
+  hash.map { |location, info| 
+    if info[:team_name] == team 
+    return info[:colors]
     end
   }
-  
 end
-
