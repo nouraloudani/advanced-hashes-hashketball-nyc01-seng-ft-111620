@@ -193,7 +193,9 @@ def player_stats(player)
   }
 end
 
-def big_shoe_rebounds(player) 
+def big_shoe_rebounds
+  hash = game_hash
+  
   
       
     
