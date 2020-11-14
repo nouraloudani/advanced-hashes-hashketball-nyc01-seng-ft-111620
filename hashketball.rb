@@ -195,7 +195,7 @@ end
 
 def big_shoe_rebounds
   hash = game_hash
-  
+  hash.map { |loa
   
       
     
