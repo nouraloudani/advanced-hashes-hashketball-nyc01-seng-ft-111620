@@ -176,9 +176,9 @@ def player_numbers(team)
     if info[:team_name] == team 
       info[:players].map { |player_info|
       jerseys << player_info[:number]
-    end
       }
+    end
   }
-  jerseys
+  return jerseys
 end
       
