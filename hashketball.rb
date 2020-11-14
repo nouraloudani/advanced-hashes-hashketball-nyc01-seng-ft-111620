@@ -179,5 +179,6 @@ def player_numbers(team)
     end
       }
   }
+  jerseys
 end
       
