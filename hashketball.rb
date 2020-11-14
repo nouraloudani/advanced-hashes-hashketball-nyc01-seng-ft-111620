@@ -194,8 +194,21 @@ def player_stats(player)
 end
 
 def big_shoe_rebounds
+  biggest_shoe_size = 1
+  rebounds = 0 
   hash = game_hash
-  hash.map { |loa
+  hash.map { |location, info|
+    info[:players].map { |player_info|
+      if player_info[:shoe] > biggest_shoe_size
+        biggest_shoe_size = player_info[:shoe]
+        rebounds = player_info[:rebounds]
+      end
+    }
+  }
+  return rebounds
+end  
+      
+      
   
       
     
