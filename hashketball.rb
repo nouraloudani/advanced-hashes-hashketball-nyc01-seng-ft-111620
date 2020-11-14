@@ -185,8 +185,13 @@ end
 def player_stats(player)
   hash = game_hash
   hash.map { |location, info|
-    if info[:players] == player 
-      return info[:players]
+    info[:players].map { |player_info|
+      if player_info[:player_name] == player 
+        return info[:players]
+      end
+    }
+  }
+  
       
     
       
