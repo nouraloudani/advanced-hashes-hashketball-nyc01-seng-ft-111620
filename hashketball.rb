@@ -183,5 +183,10 @@ def player_numbers(team)
 end
 
 def player_stats(player)
-  
+  hash = game_hash
+  hash.map { |location, info|
+    if info[:players] == player 
+      return info[:players]
+      
+    
       
