@@ -177,7 +177,7 @@ def player_numbers(team)
       info[:players].map { |player_info|
       jerseys << player_info[:number]
       }
-    defined?
+    end
   }
   return jerseys
 end
