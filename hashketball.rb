@@ -187,10 +187,11 @@ def player_stats(player)
   hash.map { |location, info|
     info[:players].map { |player_info|
       if player_info[:player_name] == player 
-        return info[:players]
+        return player_info
       end
     }
   }
+end
   
       
     
